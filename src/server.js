@@ -22,7 +22,7 @@ app.use(require('./routes'));
 
 const port = 3000;
 
-app.listen(port , err => {
+app.listen(process.env.PORT || port , err => {
     if(err){
         console.log(err);
     }else{
